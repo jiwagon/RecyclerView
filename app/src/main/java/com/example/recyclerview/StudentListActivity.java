@@ -1,4 +1,8 @@
 package com.example.recyclerview;
 
-public class StudentListActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class StudentListActivity extends AppCompatActivity {
+
+
 }

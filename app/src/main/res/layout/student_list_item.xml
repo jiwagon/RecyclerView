@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/student_list_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_weight="1"
             android:padding="8dp"
             app:srcCompat="@drawable/boy1" />
@@ -43,13 +43,20 @@
 
             <TextView
                 android:id="@+id/student_phone"
-                style="@style/TextAppearance.AppCompat.Title"
+                style="@style/TextAppearance.AppCompat.Medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/student_email"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/student_interest"
                 style="@style/TextAppearance.AppCompat.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
