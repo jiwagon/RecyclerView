@@ -1,6 +1,6 @@
 package com.example.recyclerview;
 
-public class StudentData {
+class StudentData {
 
     final private String studentName;
     final private int profileImage;
@@ -18,29 +18,23 @@ public class StudentData {
     }
 
 
-    public String getCampusName() {
-
+    public String getStudentName() {
         return studentName;
     }
 
     public String getEmail() {
-
         return email;
     }
 
     public String getPhone() {
-
         return phone;
     }
 
     public String getEventInterest() {
-
         return eventInterest;
     }
 
     public int getProfileImage() {
-
         return profileImage;
     }
-
 }
