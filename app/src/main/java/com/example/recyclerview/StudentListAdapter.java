@@ -71,24 +71,24 @@ public class StudentListAdapter extends
         @Override
         public void onClick(View view) {
             // Get the position of the item that was clicked.
-//            int mPosition = getLayoutPosition();
-//            // Use that to access the affected item in mWordList.
-//            String student = mStudentList[mPosition].getStudentName();
-//            Snackbar.make(studentTitleView,
-//                    student + " clicked!",
-//                    Snackbar.LENGTH_SHORT).show();
-//            Snackbar.make(studentImageView,
-//                    student + " clicked!",
-//                    Snackbar.LENGTH_SHORT).show();
-//            Snackbar.make(studentEmailView,
-//                    student + " clicked!",
-//                    Snackbar.LENGTH_SHORT).show();
-//            Snackbar.make(studentPhoneView,
-//                    student + " clicked!",
-//                    Snackbar.LENGTH_SHORT).show();
-//            Snackbar.make(studentInterestView,
-//                    student + " clicked!",
-//                    Snackbar.LENGTH_SHORT).show();
+            int mPosition = getLayoutPosition();
+            // Use that to access the affected item in mWordList.
+            String student = mStudentList[mPosition].getStudentName();
+            Snackbar.make(studentTitleView,
+                    student + " is added to your contact list!",
+                    Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(studentImageView,
+                    student + " is added to your contact list!",
+                    Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(studentEmailView,
+                    student + " is added to your contact list!",
+                    Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(studentPhoneView,
+                    student + " is added to your contact list!",
+                    Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(studentInterestView,
+                    student + " is added to your contact list!",
+                    Snackbar.LENGTH_SHORT).show();
 
         }
     }

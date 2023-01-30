@@ -15,15 +15,16 @@
 
         <ImageView
             android:id="@+id/student_list_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             android:layout_weight="1"
             android:padding="8dp"
-            app:srcCompat="@drawable/boy1" />
+            app:srcCompat="@drawable/girl1" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textbox"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
             android:padding="8dp">
@@ -33,6 +34,7 @@
                 style="@style/TextAppearance.AppCompat.Headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="2dp"
                 android:text="TextView" />
 
             <TextView
