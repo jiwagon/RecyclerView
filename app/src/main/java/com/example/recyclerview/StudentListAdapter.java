@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-
 public class StudentListAdapter extends
         RecyclerView.Adapter<StudentListAdapter.StudentViewHolder> {
     private final StudentData[] mStudentList;
