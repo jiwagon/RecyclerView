@@ -5,14 +5,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private StudentListAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    private StudentData[] mStudentList;
 
     private final StudentData[] STUDENT_LIST = {
             new StudentData("Olivia Ouyang", R.drawable.girl1, "jnd4353@psu.edu", "614-789-3412",
@@ -47,8 +52,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student_list);
 
         mRecyclerView = findViewById(R.id.recycler_view_student);
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mAdapter = new StudentListAdapter(this, STUDENT_LIST);
         mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    /**
+     * To display the SearchView in the app bar,
+     * inflate the XML menu resource (res/menu/options_menu.xml)
+     * in the onCreateOptionsMenu() method of your activity:
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.options_menu, menu);
+
+        return true;
     }
 }

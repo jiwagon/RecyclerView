@@ -17,7 +17,6 @@ class StudentData {
         this.eventInterest = eventInterest;
     }
 
-
     public String getStudentName() {
         return studentName;
     }
